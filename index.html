@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BM Codeur - Portfolio</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  
+</head>
+<body>
+  <header>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-custom bg-primary">
+        <div class="container-fluid">
+            <!-- Logo/Titre -->
+            <a class="navbar-brand" href="#">BM CODEUR</a>
+            
+            <!-- Bouton toggle pour mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Menu de navigation -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#apropos">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#competences">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projets">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+    <section class="hero" id="accueil">
+        <div class="hero-content">
+            <div class="text">
+              <h1>Bienvenue , Je suis <br> <span>BAH MAMADOU</span>, Développeur Web </h1>
+                <a href="cv/Cv.pdf" download class="btn btn-danger">Télécharger mon CV</a>
+            </div> <hr>
+            <div class="photo">
+              <img src="./images/WhatsApp Image 2025-03-13 à 03.17.24_aeb29905.jpg" alt="bah mamadou">
+            </div>
+        </div>
+    </section>  <br>
+
+    <section id="about">
+      <div class="container">
+          
+          <div class="about-text">
+              <h2 id="h2">À PROPOS</h2> <hr>
+              <p>
+                  Je suis Bah Mamadou, développeur web passionné par la création de solutions numériques modernes. 
+                  Avec une expertise en Developpement Web, je conçois des sites web dynamiques, performants et adaptés aux besoins des utilisateurs.
+                  Mon objectif est de transformer des idées en réalités numériques et d’apporter des expériences interactives engageantes.
+              </p>
+              <p>
+                  Toujours en quête d’innovation, j’aime relever des défis et apprendre de nouvelles technologies pour améliorer mon travail. 
+                  Si vous cherchez un développeur créatif et motivé, n’hésitez pas à me contacter !
+              </p>
+          </div>
+          <div class="about-img">
+              <img src="./images/palm.JPG" alt="Photo de Bah Mamadou">
+          </div>
+      </div>
+  </section> <br>
+
+
+  <section class="skills" id="skills">
+    <h2>Mes Compétences</h2>
+  
+    <div class="skill">
+      <p>HTML</p>
+      <div class="bar"><div class="progress" style="width: 95%;"></div></div>
+    </div>
+  
+    <div class="skill">
+      <p>CSS</p>
+      <div class="bar"><div class="progress" style="width: 90%;"></div></div>
+    </div>
+    <div class="skill">
+      <p>BOOTSTRAP</p>
+      <div class="bar"><div class="progress" style="width: 90%;"></div></div>
+    </div>
+    <div class="skill">
+      <p>FIGMA</p>
+      <div class="bar"><div class="progress" style="width: 90%;"></div></div>
+    </div>
+  
+    <div class="skill">
+      <p>JavaScript</p>
+      <div class="bar"><div class="progress" style="width: 80%;"></div></div>
+    </div>
+  
+    <div class="skill">
+      <p>Python</p>
+      <div class="bar"><div class="progress" style="width: 90%;"></div></div>
+    </div>
+
+    <div class="skill">
+      <p>PHP</p>
+      <div class="bar"><div class="progress" style="width: 85%;"></div></div>
+    </div>
+    <div class="skill">
+      <p>LARAVEL</p>
+      <div class="bar"><div class="progress" style="width: 70%;"></div></div>
+    </div>
+    <div class="skill">
+      <p>FLUTTER</p>
+      <div class="bar"><div class="progress" style="width: 50%;"></div></div>
+    </div>
+
+    <div class="skill">
+      <p>Photosop</p>
+      <div class="bar"><div class="progress" style="width: 80%;"></div></div>
+    </div>
+  </section>
+  
+
+ <footer>
+  <section id="contact">
+      <h2>Contactez-moi</h2>
+      <p> <strong>vous avez un projet , une question ou une opportunité à me proposer ?
+        N'hesitez pas à me contacter via le formulaire ci-dessous ou par email.</strong>
+      </p>
+      <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="b6fac759-6acb-4c4d-bc7b-5cba26cc0138">
+          <input type="text" name="name" placeholder="nom" required>
+          <input type="email" name="email" placeholder="email" required>
+          <textarea name="message" placeholder="message" required></textarea>
+          <button type="submit">Envoyer</button>
+    </form> <br>
+      <div id="info-contact">
+        <p><strong>Email: bmoffficiel224@gmail.com</strong></p>
+        <p><strong>Tel : +224625704164</strong></p>
+        <p><strong>Ville : Conakry, Guinée </strong></p>
+      </div>
+      <!-- Réseaux sociaux (Bootstrap + Font Awesome) -->
+  <div class="d-flex justify-content-center gap-3 mt-4 pt-3 border-top">
+      <a href="https://www.linkedin.com/in/mamadou-bah-792546355?utm_source=share_via&utm_content=profile&utm_medium=member_ios" class="btn btn-outline-secondary btn-lg" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+        <span class="visually-hidden">LinkedIn</span>
+      </a>
+
+      <a href="https://www.instagram.com/bm_codeur?igsh=MTl3aGJnMHg0djFlYw%3D%3D&utm_source=qr" class="btn btn-outline-secondary btn-lg" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+        <i class="fab fa-instagram" aria-hidden="true"></i>
+        <span class="visually-hidden">Instagram</span>
+      </a>
+
+      <a href="https://www.facebook.com/share/1ALCk3r6yY/?mibextid=wwXIfr" class="btn btn-outline-secondary btn-lg" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+        <i class="fab fa-facebook-f" aria-hidden="true"></i>
+        <span class="visually-hidden">Facebook</span>
+      </a>
+
+      <a href="https://www.tiktok.com/@bm__codeur" class="btn btn-outline-secondary btn-lg" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+        <i class="fab fa-tiktok" aria-hidden="true"></i>
+        <span class="visually-hidden">TikTok</span>
+      </a>
+
+      <a href="https://www.youtube.com/@BM_codeur" class="btn btn-outline-secondary btn-lg" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+        <i class="fab fa-youtube" aria-hidden="true"></i>
+        <span class="visually-hidden">YouTube</span>
+      </a>
+    </div>
+  </section>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,364 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e0bce;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    margin: 0;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar a {
+    color: rgb(238, 235, 235);
+    text-decoration: none;
+  }
+
+  #about {
+    padding: 50px 10%;
+    background-color: #f9f9f9; /* Couleur de fond légère */
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Espace entre la photo et le texte */
+}
+
+.about-img img {
+    width: 300px; /* Taille de la photo */
+    border-radius: 30px; /* Coins arrondis */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); /* Effet d'ombre */
+}
+img:hover{
+  border-radius: 70px;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* SECTION HERO */
+
+.hero {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Texte */
+.hero-content .text h1 {
+  font-size: 28px;
+  line-height: 1.4;
+  color: #333;
+}
+
+.hero-content .text span {
+  color: #007acc;
+  font-weight: bold;
+}
+
+/* Photo */
+.hero-content .photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 5px solid #007acc;
+  overflow: hidden;
+}
+.hero-content .photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* SECTION SKILLS */
+
+.skills {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.skill p {
+  margin: 0 0 5px;
+  font-weight: bold;
+}
+
+.bar {
+  background-color: #eee;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.progress {
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 10px 0 0 10px;
+  transition: width 1s ease;
+}
+
+/* SECTION CONTACT */
+#contact {
+  max-width: auto;
+  margin: auto;
+  padding: 40px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+#contact h2 {
+  font-size: 2em;
+  margin-bottom: 10px; 
+  text-align: center;
+}
+#contact p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+  text-align: center;
+}
+form {
+  flex-direction: column;
+  display: flex;
+}
+form label {
+  margin: 10px 0 5px;
+}
+form input , form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  font-size: 1em;
+  border-radius: 5px;
+  
+}
+h2:hover{
+  color: #d30f08;
+  transition: 0.5s;
+  border: 1px solid black;
+  background-color: rgb(15, 2, 255);
+}
+
+/* SECTION MEDIA SCREEN */
+@media screen and (max-width:568px){
+
+
+  .container {
+    display: block;
+    align-items: center;
+    gap: 30px; /* Espace entre la photo et le texte */
+  }
+  .hero-content{
+    display: block;
+    text-align: center;
+  }
+    .hero-content .photo {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 5px solid #007acc;
+      overflow: hidden;
+  }
+
+  .hero-content .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #h2 {
+    text-align: center;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+  }
+    .socials .btn 
+  { width: 55px; 
+    height: 55px; }
+  .socials .btn i
+  { font-size: 25px; }
+  .hero-content .text .btn 
+  {
+    display: block !important;
+    width: calc(100% - 32px); /* ou 90% */
+    max-width: 420px;
+    margin: 10px auto 0;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    font-size: 1rem;
+  
+}
+
+
+  .hero-content .photo  {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;        /* recadre proprement l'image */
+    display: block;
+    padding-left: 20px;
+  }
+}
+
+/* Ajuste l'apparence des boutons sociaux */
+.socials .btn
+ { 
+  width: 90px;
+  height: 90px; 
+  padding: 0; 
+  display:flex;
+  align-items:center; 
+  justify-content:center; 
+  border-radius:10px; }
+.socials .btn i
+ { 
+  font-size: 20px; }
+/* plus petits sur très petits écrans */
+
+@media screen and (min-width:569px) and (max-width:899px){
+  #contact {
+    border: 2px solid black;
+  max-width: auto;
+  margin: auto;
+  padding: 40px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 50%;
+  height: 50%;
+
+}
+.container {
+    display: block;
+    align-items: center;
+    gap: 50px; /* Espace entre la photo et le texte */
+}
+.about-text {
+    flex: 1;
+
+}
+
+.about-img img {
+    width: 350px; /* Taille de la photo */
+    border-radius: 30px; /* Coins arrondis */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); /* Effet d'ombre */
+}
+img:hover{
+  border-radius: 90px;
+}
+}
+  #h2 {
+    text-align: center;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    font-size: 1.5em;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+
+
+/* Bouton principal - responsive + accessible */
+.btn {
+  display: inline-block;
+  padding: clamp(10px, 1.5vw, 14px) clamp(14px, 2.5vw, 20px);
+  font-size: clamp(0.95rem, 1.6vw, 1.05rem);
+  border-radius: 8px;
+  background: linear-gradient(180deg, #e03a3a 0%, #c82333 100%);
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(200, 35, 45, 0.18);
+  transition: transform 120ms ease, box-shadow 120ms ease, filter 120ms ease;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hover / focus / active states */
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(200, 35, 45, 0.22);
+  filter: brightness(1.03);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.12);
+}
+
+.btn:focus {
+  outline: 3px solid rgba(220, 53, 69, 0.18); /* visible focus ring pour l'accessibilité */
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+/* Variante rouge (danger) */
+.btn-danger {
+  background: linear-gradient(180deg, #dc3545 0%, #b02a37 100%);
+}
+
+/* Responsive: bouton plein largeur sur petits écrans */
+@media (max-width: 600px) {
+  .btn {
+    display: block;
+    width: 50%;
+    text-align: center;
+    padding: 6px 6px;
+    font-size: 1rem;
+  }
+}
+
+/* Respect des préférences de réduction d'animation */
+@media (prefers-reduced-motion: reduce) {
+  .btn {
+    transition: none;
+  }
+}
